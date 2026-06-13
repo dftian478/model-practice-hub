@@ -1,0 +1,49 @@
+backend:
+  name: github
+  repo: dftian478/model-practice-hub
+  branch: main
+
+publish_mode: editorial_workflow
+media_folder: public/uploads
+public_folder: /uploads
+
+site_url: https://dftian478.github.io/model-practice-hub
+display_url: https://dftian478.github.io/model-practice-hub
+logo_url: /favicon.svg
+
+collections:
+  - name: docs
+    label: Docs
+    folder: src/content/docs
+    create: true
+    nested:
+      depth: 3
+      summary: "{{title}}"
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - label: Category
+        name: category
+        widget: select
+        required: false
+        options:
+          - Best Practices
+          - FAQ
+          - Troubleshooting
+          - Policy
+          - Glossary
+      - label: Review Status
+        name: reviewStatus
+        widget: select
+        default: Draft
+        options:
+          - Draft
+          - Needs Review
+          - Approved
+      - { label: Last Reviewed, name: lastReviewed, widget: datetime, required: false, date_format: YYYY-MM-DD, time_format: false }
+      - label: Body
+        name: body
+        widget: markdown

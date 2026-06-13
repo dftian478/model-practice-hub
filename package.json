@@ -1,0 +1,19 @@
+{
+  "name": "model-practice-hub",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "check:content": "node scripts/check-content.mjs",
+    "check": "npm run check:content && npm run build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.40.0",
+    "astro": "^6.4.5",
+    "sharp": "^0.34.5"
+  }
+}
