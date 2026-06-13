@@ -37,7 +37,7 @@ jobs:
         run: npm run build
 
   deploy:
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' && github.event.repository.private == false
     needs: check
     runs-on: ubuntu-latest
     environment:
