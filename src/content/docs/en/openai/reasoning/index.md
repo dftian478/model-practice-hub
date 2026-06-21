@@ -7,10 +7,10 @@ Reasoning models are useful for tasks that need multi-step analysis, careful com
 
 This section turns that official guidance into copyable support documentation:
 
-- [Reasoning effort](/en/openai/reasoning/effort/) explains how to choose effort levels.
-- [Tokens and context](/en/openai/reasoning/tokens-and-context/) explains output budgeting.
-- [Reasoning summaries](/en/openai/reasoning/summaries/) explains what can be shown to users.
-- [Prompting](/en/openai/reasoning/prompting/) gives prompt structure for GPT workflows.
-- [Tool use](/en/openai/reasoning/tool-use/) covers multi-turn and tool-heavy workflows.
-- [Examples](/en/openai/reasoning/examples/) provides curl snippets.
-- [FAQ](/en/openai/reasoning/faq/) collects short answers for support teams.
+- [Reasoning effort](./effort/) explains how to choose effort levels.
+- [Tokens and context](./tokens-and-context/) explains output budgeting.
+- [Reasoning summaries](./summaries/) explains what can be shown to users.
+- [Prompting](./prompting/) gives prompt structure for GPT workflows.
+- [Tool use](./tool-use/) covers multi-turn and tool-heavy workflows.
+- [Examples](./examples/) provides curl snippets.
+- [FAQ](./faq/) collects short answers for support teams.

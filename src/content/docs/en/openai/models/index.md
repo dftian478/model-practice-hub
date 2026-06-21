@@ -7,7 +7,7 @@ This list is based on the official [OpenAI latest model guide](https://developer
 
 | Official model ID | Published model ID | Use when |
 | --- | --- | --- |
-| [`gpt-5.5`](/en/openai/models/gpt-5-5/) | `pa/gpt-5.5` | You need the current default for complex workflows, reasoning-heavy support answers, tool-heavy agents, or long-context review. |
+| [`gpt-5.5`](./gpt-5-5/) | `pa/gpt-5.5` | You need the current default for complex workflows, reasoning-heavy support answers, tool-heavy agents, or long-context review. |
 | `gpt-5.4-mini` | `pa/gpt-5.4-mini` | You need lower latency or cost for lighter support and routing tasks. |
 | `gpt-5.4-nano` | `pa/gpt-5.4-nano` | You need the smallest option for simple classification, formatting, or short extraction tasks. |
 

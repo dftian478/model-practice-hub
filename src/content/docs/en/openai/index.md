@@ -9,11 +9,11 @@ Use the official OpenAI documentation as the source of truth for API behavior. T
 
 ## Sections
 
-- [Quickstart](/en/openai/quickstart/) sets environment variables and makes the first Responses API call.
-- [Configuration](/en/openai/configuration/) explains how to keep keys, domains, and model names replaceable.
-- [Models](/en/openai/models/) lists currently applicable model names and their `pa/` mapping.
-- [Curl examples](/en/openai/curl-examples/) provides copyable calls for common support cases.
-- [GPT reasoning](/en/openai/reasoning/) covers effort, token budgeting, summaries, prompting, tools, and FAQ.
+- [Quickstart](./quickstart/) sets environment variables and makes the first Responses API call.
+- [Configuration](./configuration/) explains how to keep keys, domains, and model names replaceable.
+- [Models](./models/) lists currently applicable model names and their `pa/` mapping.
+- [Curl examples](./curl-examples/) provides copyable calls for common support cases.
+- [GPT reasoning](./reasoning/) covers effort, token budgeting, summaries, prompting, tools, and FAQ.
 
 ## Official references
 
