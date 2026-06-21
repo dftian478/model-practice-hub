@@ -5,11 +5,11 @@ template: splash # Remove or comment out this line to display the site sidebar o
 hero:
   tagline: Neutral field notes for applied model usage, support answers, troubleshooting, and practical implementation patterns.
   actions:
-    - text: Read the Overview
-      link: /overview/
+    - text: OpenAI Guide
+      link: /openai/
       icon: right-arrow
-    - text: Browse FAQ
-      link: /faq/response-quality/
+    - text: Reasoning Guide
+      link: /openai/reasoning/
       icon: open-book
       variant: minimal
 ---
@@ -21,6 +21,9 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 <CardGrid stagger>
 	<Card title="Best practices" icon="rocket">
 		Practical patterns for prompts, context design, response review, and integration workflows.
+	</Card>
+	<Card title="OpenAI guide" icon="open-book">
+		Quickstart, model mapping, curl examples, reasoning guidance, FAQs, and troubleshooting notes.
 	</Card>
 	<Card title="FAQ" icon="open-book">
 		Short answers to recurring customer and implementation questions.

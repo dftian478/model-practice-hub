@@ -24,6 +24,26 @@ export default defineConfig({
 					items: [{ autogenerate: { directory: 'best-practices' } }],
 				},
 				{
+					label: 'OpenAI',
+					items: [
+						{ label: 'Overview', slug: 'openai' },
+						{ label: 'Quickstart', slug: 'openai/quickstart' },
+						{ label: 'Configuration', slug: 'openai/configuration' },
+						{ label: 'Curl Examples', slug: 'openai/curl-examples' },
+						{ label: 'Best Practices', slug: 'openai/best-practices' },
+						{ label: 'FAQ', slug: 'openai/faq' },
+						{ label: 'Troubleshooting', slug: 'openai/troubleshooting' },
+						{
+							label: 'Models',
+							items: [{ autogenerate: { directory: 'openai/models' } }],
+						},
+						{
+							label: 'GPT Reasoning',
+							items: [{ autogenerate: { directory: 'openai/reasoning' } }],
+						},
+					],
+				},
+				{
 					label: 'FAQ',
 					items: [{ autogenerate: { directory: 'faq' } }],
 				},
