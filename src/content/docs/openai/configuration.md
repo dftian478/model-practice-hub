@@ -1,29 +1,29 @@
 ---
-title: Configuration
-description: Recommended environment variables for reusable OpenAI-compatible examples.
+title: 配置
+description: 可复用 OpenAI 兼容示例推荐使用的环境变量。
 ---
 
-Use three values in every example:
+每个示例都使用三个值：
 
-| Variable | Purpose | Example |
+| 变量 | 用途 | 示例 |
 | --- | --- | --- |
-| `OPENAI_BASE_URL` | OpenAI-compatible `/v1` endpoint. | `https://api.example.com/v1` |
-| `OPENAI_API_KEY` | User-owned API key. | `replace-with-your-key` |
-| `MODEL_NAME` | Model selected by the reader. | `pa/gpt-5.5` |
+| `OPENAI_BASE_URL` | OpenAI 兼容的 `/v1` 端点。 | `https://api.example.com/v1` |
+| `OPENAI_API_KEY` | 用户自己的 API key。 | `replace-with-your-key` |
+| `MODEL_NAME` | 用户选择的模型。 | `pa/gpt-5.5` |
 
-## Model naming
+## 模型命名
 
-Official OpenAI model IDs are mapped by adding `pa/` to the front.
+OpenAI 官方模型 ID 通过在前面添加 `pa/` 进行映射。
 
-| Official ID | Published ID |
+| 官方 ID | 发布 ID |
 | --- | --- |
 | `gpt-5.5` | `pa/gpt-5.5` |
 
-Do not add provider names, routing suffixes, or experimental suffixes in public examples. If a new official OpenAI model is added, first refresh the official source, then publish the mapped ID as `pa/<official-id>`.
+公开示例中不要添加 provider 名称、路由后缀或实验后缀。如果 OpenAI 新增官方模型，先刷新官方来源，再按 `pa/<official-id>` 发布映射 ID。
 
-## Content controls
+## 内容控制
 
-- Do not publish real keys, private endpoints, customer names, or workspace links.
-- Use placeholders such as `https://api.example.com/v1`.
-- Put official-source links near any behavior claim.
-- Run the content check and build before merging.
+- 不发布真实 key、私有端点、客户名称或工作区链接。
+- 使用 `https://api.example.com/v1` 这类占位符。
+- 行为声明附近放官方来源链接。
+- 合并前运行内容检查和构建。

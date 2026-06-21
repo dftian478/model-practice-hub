@@ -1,37 +1,37 @@
 ---
-title: Grounding claims in official sources
-description: How to separate official model behavior from practical recommendations.
-category: Best Practices
+title: 用官方来源支撑能力说明
+description: 如何区分官方模型行为和实践建议。
+category: 最佳实践
 reviewStatus: Draft
 lastReviewed: 2026-06-14
 ---
 
-When an article describes model behavior, limits, pricing, API parameters, or safety behavior, link to official vendor documentation whenever practical.
+当文章描述模型行为、限制、价格、API 参数或安全行为时，应尽量链接官方文档。
 
-## Recommended language
+## 推荐表述
 
-Use clear labels:
+使用明确标签：
 
-- **Official behavior:** documented vendor behavior.
-- **Observed practice:** patterns seen in implementation work.
-- **Recommendation:** guidance based on practical experience.
+- **官方行为：** 官方文档中描述的行为。
+- **观察实践：** 实际接入中常见的模式。
+- **建议：** 基于实践经验的操作建议。
 
-## Example
+## 示例
 
-Instead of writing:
-
-```text
-The model always follows this format.
-```
-
-Write:
+不要写：
 
 ```text
-For repeatable outputs, request a fixed schema and validate the result before using it downstream.
+模型总是会遵循这个格式。
 ```
 
-## Review checklist
+改成：
 
-- Factual claims are linked or clearly framed as observed practice.
-- The article does not imply official vendor support.
-- Recommendations include limits or tradeoffs where relevant.
+```text
+为了获得更稳定的输出，请要求固定 schema，并在下游使用前校验结果。
+```
+
+## 审阅清单
+
+- 事实性声明已经链接来源，或明确标注为观察实践。
+- 文章没有暗示官方支持未公开能力。
+- 建议中包含必要的限制和取舍。

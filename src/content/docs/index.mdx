@@ -1,14 +1,14 @@
 ---
-title: Model Practice Hub
-description: Neutral best-practice notes, FAQs, and troubleshooting guides for applied AI model usage.
+title: 模型实践中心
+description: 中立的模型使用最佳实践、FAQ 与排障文档。
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Neutral field notes for applied model usage, support answers, troubleshooting, and practical implementation patterns.
+  tagline: 面向模型使用、支持答疑、排障和落地实践的中立知识库。
   actions:
-    - text: OpenAI Guide
+    - text: OpenAI 指南
       link: /openai/
       icon: right-arrow
-    - text: Reasoning Guide
+    - text: 推理指南
       link: /openai/reasoning/
       icon: open-book
       variant: minimal
@@ -16,22 +16,22 @@ hero:
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## What this site contains
+## 站点内容
 
 <CardGrid stagger>
-	<Card title="Best practices" icon="rocket">
-		Practical patterns for prompts, context design, response review, and integration workflows.
+	<Card title="最佳实践" icon="rocket">
+		提示词、上下文设计、响应审阅和集成流程的可复用模式。
 	</Card>
-	<Card title="OpenAI guide" icon="open-book">
-		Quickstart, model mapping, curl examples, reasoning guidance, FAQs, and troubleshooting notes.
+	<Card title="OpenAI 指南" icon="open-book">
+		Quickstart、模型映射、curl 示例、推理说明、FAQ 与排障内容。
 	</Card>
 	<Card title="FAQ" icon="open-book">
-		Short answers to recurring customer and implementation questions.
+		面向常见使用问题和集成问题的短答。
 	</Card>
-	<Card title="Troubleshooting" icon="setting">
-		Step-by-step checks for common model output, integration, and workflow issues.
+	<Card title="排障" icon="setting">
+		针对模型输出、接口集成和工作流问题的检查步骤。
 	</Card>
-	<Card title="Editorial controls" icon="pencil">
-		Content is reviewed for neutrality, sensitive terms, official-source grounding, and customer privacy before publishing.
+	<Card title="发布控制" icon="pencil">
+		发布前检查中立表述、敏感词、官方来源依据和隐私信息。
 	</Card>
 </CardGrid>

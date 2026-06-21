@@ -1,24 +1,24 @@
 ---
-title: What is a context window?
-description: A practical FAQ explaining context windows for support conversations.
+title: 什么是上下文窗口？
+description: 面向支持场景解释上下文窗口的 FAQ。
 category: FAQ
 reviewStatus: Draft
 lastReviewed: 2026-06-14
 ---
 
-A context window is the amount of information a model can consider at one time. It usually includes the current prompt, conversation history, retrieved documents, tool results, and the model response.
+上下文窗口是模型一次能够处理的信息量，通常包括当前提示词、对话历史、检索文档、工具结果和模型回复。
 
-## Why it matters
+## 为什么重要
 
-If the useful information is missing, too long, or buried inside unrelated text, the model may produce an incomplete answer.
+如果关键信息缺失、过长，或被无关内容淹没，模型可能给出不完整的答案。
 
-## Practical guidance
+## 实践建议
 
-- Put the most important facts near the task.
-- Remove unrelated history.
-- Split large documents into focused sections.
-- Ask for citations to confirm which source text was used.
+- 将最重要的信息放在任务附近。
+- 移除无关历史。
+- 将长文档拆成聚焦的小节。
+- 要求引用来源，以确认模型使用了哪段资料。
 
-## Common misconception
+## 常见误解
 
-A larger context window does not automatically mean better answers. Source quality, structure, and task clarity still matter.
+更大的上下文窗口不自动等于更好的回答。资料质量、结构和任务清晰度仍然很重要。

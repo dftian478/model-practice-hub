@@ -1,27 +1,27 @@
 ---
-title: Editorial Policy
-description: Publication rules for neutral, safe, and useful articles.
+title: 发布规范
+description: 中立、安全、可用文章的发布规则。
 ---
 
-Every article must be written as neutral guidance. The content may describe best practices for model usage, but it must not expose internal operations, private customer information, company affiliation, or unsupported claims.
+所有文章都应以中立实践说明的方式撰写。内容可以描述模型使用的最佳实践，但不能暴露私有运维细节、客户信息、组织关联或缺少依据的能力声明。
 
-## Required checks
+## 必查项
 
-- Remove company names, product aliases, internal domains, people names, customer names, and internal project names.
-- Link to official documentation when stating model behavior, limits, or API facts.
-- Label practical advice as guidance rather than vendor policy.
-- Generalize customer questions before publication.
-- Avoid screenshots unless they are scrubbed and approved.
-- Run content checks before publishing.
+- 移除组织名称、产品别名、私有域名、人名、客户名称和私有项目名。
+- 描述模型行为、限制或 API 事实时链接官方文档。
+- 将实践建议标注为建议，不写成官方政策。
+- 发布前将客户问题泛化。
+- 避免截图；确需截图时必须脱敏并经过审阅。
+- 发布前运行内容检查和构建。
 
-## Recommended article structure
+## 推荐文章结构
 
-1. Start with the user question or symptom.
-2. Give a short answer.
-3. Add context and tradeoffs.
-4. Link to official documentation for factual claims.
-5. End with next steps or related articles.
+1. 先写用户问题或症状。
+2. 给出简短答案。
+3. 补充背景、限制和取舍。
+4. 对事实性声明链接官方文档。
+5. 最后给出下一步或相关文章。
 
-## Disclaimer
+## 声明
 
-This site provides independent best-practice guidance and is not official vendor documentation.
+本站提供独立的最佳实践说明，不是任何厂商的官方文档。

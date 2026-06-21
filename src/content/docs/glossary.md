@@ -1,23 +1,23 @@
 ---
-title: Glossary
-description: Neutral definitions for common model and documentation terms.
-category: Glossary
+title: 术语表
+description: 常见模型与文档术语的中立解释。
+category: 术语表
 reviewStatus: Draft
 lastReviewed: 2026-06-14
 ---
 
-## Context
+## 上下文
 
-Information provided to a model as part of a prompt, conversation, retrieval result, or tool output.
+作为提示词、对话历史、检索结果或工具输出提供给模型的信息。
 
-## Grounding
+## 依据化
 
-The practice of connecting an answer to provided source material or official documentation.
+将回答和给定资料或官方文档建立明确关联的做法。
 
-## Retrieval
+## 检索
 
-The process of finding relevant documents or snippets before generating an answer.
+在生成回答前查找相关文档或片段的过程。
 
-## Validation
+## 校验
 
-Application-side checks that confirm output shape, required fields, citations, or business rules.
+在应用侧检查输出格式、必填字段、引用或业务规则是否满足要求。

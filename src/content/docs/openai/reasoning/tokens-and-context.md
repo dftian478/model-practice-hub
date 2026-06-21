@@ -1,18 +1,18 @@
 ---
-title: Tokens and Context
-description: How reasoning affects output budget and context planning.
+title: Tokens 与上下文
+description: reasoning 如何影响输出预算和上下文规划。
 ---
 
-Reasoning work consumes output budget before the visible answer is completed. Keep `max_output_tokens` large enough for both the hidden reasoning work and the final response.
+推理工作会在可见答案完成前消耗输出预算。`max_output_tokens` 需要同时覆盖隐藏推理工作和最终回答。
 
-## Practical guidance
+## 实践建议
 
-- Raise `max_output_tokens` when answers are cut off.
-- Lower `reasoning.effort` when the task is simple or latency-sensitive.
-- Keep source material concise and relevant; long context can still distract the model.
-- For repeated static instructions, keep stable text at the front of the prompt to improve cache reuse where supported.
+- 回答被截断时，提高 `max_output_tokens`。
+- 任务简单或延迟敏感时，降低 `reasoning.effort`。
+- 资料保持简洁、相关；长上下文仍可能干扰模型。
+- 对重复静态指令，将稳定文本放在提示词前部，以便在支持时提升缓存复用。
 
-## Example budget
+## 预算示例
 
 ```json
 {
@@ -25,4 +25,4 @@ Reasoning work consumes output budget before the visible answer is completed. Ke
 }
 ```
 
-Official reference: [OpenAI reasoning models guide](https://developers.openai.com/api/docs/guides/reasoning).
+官方参考：[OpenAI reasoning models guide](https://developers.openai.com/api/docs/guides/reasoning)。

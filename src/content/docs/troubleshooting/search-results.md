@@ -1,21 +1,21 @@
 ---
-title: Search does not find the expected article
-description: How to debug missing or weak documentation search results.
-category: Troubleshooting
+title: 搜索找不到预期文章
+description: 如何排查文档搜索结果缺失或排序较弱的问题。
+category: 排障
 reviewStatus: Draft
 lastReviewed: 2026-06-14
 ---
 
-Search quality depends on article titles, descriptions, headings, and body text.
+搜索质量取决于文章标题、描述、标题层级和正文内容。
 
-## Checks
+## 检查项
 
-1. Confirm the article is published.
-2. Add common user wording to the title or first paragraph.
-3. Use specific headings for symptoms and questions.
-4. Avoid internal jargon that readers will not search for.
-5. Rebuild the site and confirm the search index is generated.
+1. 确认文章已经发布。
+2. 在标题或首段加入用户常用说法。
+3. 用具体标题描述症状和问题。
+4. 避免读者不会搜索的私有术语。
+5. 重新构建站点并确认搜索索引已生成。
 
-## Writing tip
+## 写作建议
 
-For FAQ articles, write the title as the user's real question whenever possible.
+FAQ 文章标题应尽量写成用户真实会问的问题。

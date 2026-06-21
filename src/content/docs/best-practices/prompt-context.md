@@ -1,31 +1,31 @@
 ---
-title: Prompt Context Design
-description: How to structure context so model responses are easier to review and reuse.
+title: 提示词上下文设计
+description: 如何组织上下文，让模型回答更容易审阅和复用。
 ---
 
-Good context design makes model outputs easier to evaluate. A useful prompt separates the task, source material, constraints, and expected output shape.
+好的上下文设计能让模型输出更容易评估。一个可用的提示词应清晰拆分任务、资料、约束和输出格式。
 
-## Recommended pattern
+## 推荐结构
 
-Use four blocks:
+使用四个区块：
 
-1. **Task:** what the model should do.
-2. **Context:** facts the model may rely on.
-3. **Constraints:** style, safety, scope, and forbidden assumptions.
-4. **Output:** format, length, and required fields.
+1. **任务：** 模型需要完成什么。
+2. **上下文：** 模型可以依赖哪些事实。
+3. **约束：** 风格、安全、范围和禁止假设。
+4. **输出：** 格式、长度和必填字段。
 
-## Example
+## 示例
 
 ```text
-Task: Summarize the integration issue for a support engineer.
-Context: Use only the notes below.
-Constraints: Do not mention customer names. Do not guess root cause.
-Output: Return symptoms, likely causes, and next checks.
+任务：为技术支持工程师总结集成问题。
+上下文：只使用下方记录。
+约束：不要提及客户名称。不要猜测根因。
+输出：返回症状、可能原因和下一步检查。
 ```
 
-## Review checklist
+## 审阅清单
 
-- The source material is separated from instructions.
-- The output format is explicit.
-- The prompt says what not to infer.
-- Sensitive identifiers are removed before sending content to a model.
+- 资料和指令已经分开。
+- 输出格式明确。
+- 提示词说明了哪些内容不能推断。
+- 发送给模型前已移除敏感标识。

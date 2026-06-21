@@ -1,28 +1,28 @@
 ---
-title: FAQ
-description: Common questions for OpenAI-compatible docs, model mapping, and reasoning examples.
+title: 常见问题
+description: OpenAI 兼容文档、模型映射和推理示例的常见问题。
 ---
 
-## Which model name should examples use?
+## 示例应该使用哪个模型名称？
 
-Use `pa/<official-model-id>`. For example, OpenAI's `gpt-5.5` becomes `pa/gpt-5.5`.
+使用 `pa/<official-model-id>`。例如 OpenAI 的 `gpt-5.5` 映射为 `pa/gpt-5.5`。
 
-## Should examples include a real API domain?
+## 示例中应该写真实 API 域名吗？
 
-No. Use `OPENAI_BASE_URL` and a placeholder such as `https://api.example.com/v1`. Readers replace it with their own compatible endpoint.
+不应该。使用 `OPENAI_BASE_URL` 和 `https://api.example.com/v1` 这类占位符，读者用自己的兼容端点替换。
 
-## Can a reader call OpenAI directly with `pa/gpt-5.5`?
+## 读者能用 `pa/gpt-5.5` 直接调用 OpenAI 吗？
 
-No. The `pa/` prefix is for this compatibility layer. Direct OpenAI calls should use official OpenAI model IDs.
+不能。`pa/` 前缀用于本站兼容层示例。直接调用 OpenAI 时应使用 OpenAI 官方模型 ID。
 
-## Why use the Responses API?
+## 为什么使用 Responses API？
 
-It supports the reasoning-oriented examples in this guide, including reasoning configuration, structured output, tool use, and multi-turn state patterns.
+它支持本指南的推理示例，包括 reasoning 配置、结构化输出、工具调用和多轮状态模式。
 
-## Do reasoning summaries expose hidden reasoning?
+## reasoning summary 会暴露隐藏推理吗？
 
-No. Treat summaries as model-provided explanations or progress notes, not as raw hidden reasoning. Do not promise access to hidden chain-of-thought.
+不会。summary 应视为模型生成的解释或进度说明，不是原始隐藏推理。不要承诺能访问隐藏 chain-of-thought。
 
-## How should new model pages be added?
+## 如何添加新模型页面？
 
-Refresh the official OpenAI model source, add the official ID to the model list, map it to `pa/<official-id>`, then add a dedicated model FAQ page.
+先刷新 OpenAI 官方模型来源，将官方 ID 加入模型列表，映射为 `pa/<official-id>`，再添加专属模型 FAQ 页面。

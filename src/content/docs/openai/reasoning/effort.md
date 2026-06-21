@@ -1,22 +1,22 @@
 ---
-title: Reasoning Effort
-description: How to choose reasoning effort for GPT-5.5 examples.
+title: 推理强度
+description: 如何为 GPT-5.5 示例选择 reasoning effort。
 ---
 
-`reasoning.effort` controls how much reasoning work the model can spend before answering. Supported values are model-specific, so verify the official model page before publishing examples.
+`reasoning.effort` 控制模型在回答前可以投入多少推理工作。支持的取值与模型相关，因此发布示例前应检查官方模型页面。
 
-For GPT-5.5, OpenAI's latest model guide says the default reasoning effort is `medium` and recommends evaluating `low` before using `none` for latency-sensitive workflows. Use `high` or `xhigh` only when tests show that the result improves enough to justify extra latency and cost.
+对于 GPT-5.5，OpenAI 最新模型指南说明默认 reasoning effort 是 `medium`，并建议延迟敏感工作流在使用 `none` 前先评估 `low`。只有测试证明质量收益足以抵消额外延迟和成本时，才使用 `high` 或 `xhigh`。
 
-## Suggested starting points
+## 建议起点
 
-| Task | Starting effort |
+| 任务 | 起始 effort |
 | --- | --- |
-| Short FAQ answer | `low` |
-| Support troubleshooting with several checks | `medium` |
-| Migration plan, policy comparison, or risk review | `medium` |
-| Complex multi-tool analysis | `high` after evaluation |
+| 短 FAQ 回答 | `low` |
+| 包含多个检查项的支持排障 | `medium` |
+| 迁移计划、策略比较或风险评审 | `medium` |
+| 复杂多工具分析 | 评估后使用 `high` |
 
-## Example
+## 示例
 
 ```json
 {
@@ -29,4 +29,4 @@ For GPT-5.5, OpenAI's latest model guide says the default reasoning effort is `m
 }
 ```
 
-Official references: [latest model guide](https://developers.openai.com/api/docs/guides/latest-model) and [reasoning guide](https://developers.openai.com/api/docs/guides/reasoning).
+官方参考：[latest model guide](https://developers.openai.com/api/docs/guides/latest-model) 和 [reasoning guide](https://developers.openai.com/api/docs/guides/reasoning)。

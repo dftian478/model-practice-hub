@@ -1,9 +1,9 @@
 ---
-title: Curl Examples
-description: Copyable OpenAI-compatible curl examples for support and implementation articles.
+title: curl 示例
+description: 面向支持和集成文章的可复制 OpenAI 兼容 curl 示例。
 ---
 
-Set shared variables first:
+先设置共享变量：
 
 ```bash
 export OPENAI_BASE_URL="https://api.example.com/v1"
@@ -11,7 +11,7 @@ export OPENAI_API_KEY="replace-with-your-key"
 export MODEL_NAME="pa/gpt-5.5"
 ```
 
-## Basic answer
+## 基础回答
 
 ```bash
 curl "$OPENAI_BASE_URL/responses" \
@@ -24,7 +24,7 @@ curl "$OPENAI_BASE_URL/responses" \
   }'
 ```
 
-## Reasoning task
+## 推理任务
 
 ```bash
 curl "$OPENAI_BASE_URL/responses" \
@@ -41,7 +41,7 @@ curl "$OPENAI_BASE_URL/responses" \
   }'
 ```
 
-## Structured support answer
+## 结构化支持回答
 
 ```bash
 curl "$OPENAI_BASE_URL/responses" \
@@ -70,4 +70,4 @@ curl "$OPENAI_BASE_URL/responses" \
   }'
 ```
 
-For parameter behavior, validate against the [OpenAI Responses API reference](https://developers.openai.com/api/docs/api-reference/responses) before publishing.
+发布前请根据 [OpenAI Responses API reference](https://developers.openai.com/api/docs/api-reference/responses) 校验参数行为。

@@ -1,28 +1,28 @@
 ---
-title: Troubleshooting
-description: Checks for common OpenAI-compatible request and response issues.
+title: 排障
+description: OpenAI 兼容请求和响应常见问题检查。
 ---
 
-## 401 or authentication failure
+## 401 或认证失败
 
-Check that `OPENAI_API_KEY` is set in the same shell session as the curl command. Do not paste real keys into docs, screenshots, or issue comments.
+确认 `OPENAI_API_KEY` 与 curl 命令在同一个 shell 会话中设置。不要把真实 key 粘贴到文档、截图或 issue 评论中。
 
-## 404 or model not found
+## 404 或模型不存在
 
-Confirm the endpoint and model naming convention:
+确认端点和模型命名规则：
 
-- `OPENAI_BASE_URL` should point to the compatible `/v1` root.
-- Compatibility examples should use `pa/<official-model-id>`, such as `pa/gpt-5.5`.
-- Direct OpenAI examples should use official model IDs without `pa/`.
+- `OPENAI_BASE_URL` 应指向兼容的 `/v1` 根路径。
+- 兼容示例应使用 `pa/<official-model-id>`，例如 `pa/gpt-5.5`。
+- 直接调用 OpenAI 的示例应使用不带 `pa/` 的官方模型 ID。
 
-## Reasoning output is too short
+## 推理输出过短
 
-Increase `max_output_tokens`. Reasoning models may spend output budget on reasoning work before producing the visible answer, so short budgets can cut off useful responses.
+提高 `max_output_tokens`。推理模型可能先消耗一部分输出预算进行推理，再生成可见答案；预算过小会截断有用回答。
 
-## Latency is too high
+## 延迟过高
 
-Lower `reasoning.effort` for latency-sensitive tasks and test quality again. Keep higher effort for tasks where deeper reasoning clearly improves the result.
+对延迟敏感任务降低 `reasoning.effort`，并重新测试质量。只有当更深推理明显改善结果时，才保留更高 effort。
 
-## Response format changes
+## 响应格式变化
 
-Use structured output when the consumer expects stable fields. Add a small regression prompt to verify the answer shape before publishing an example.
+如果下游需要稳定字段，请使用结构化输出。发布示例前增加一个小回归 prompt，用来验证回答结构。

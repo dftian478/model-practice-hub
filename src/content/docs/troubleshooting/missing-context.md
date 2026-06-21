@@ -1,25 +1,25 @@
 ---
-title: The answer misses important context
-description: Checks to run when a model answer ignores source material or leaves out key facts.
+title: 回答遗漏重要上下文
+description: 当模型忽略资料或遗漏关键事实时的检查步骤。
 ---
 
-If an answer misses important context, first confirm whether the model actually received that context in a usable form.
+如果回答遗漏重要上下文，先确认模型是否以可用形式收到了这些上下文。
 
-## Checks
+## 检查项
 
-1. Confirm the relevant source text is included in the prompt or retrieval result.
-2. Move critical facts closer to the task instruction.
-3. Ask the model to cite the source section used for each key claim.
-4. Reduce unrelated background material.
-5. Split large tasks into smaller steps.
+1. 确认相关资料已包含在提示词或检索结果中。
+2. 将关键事实移动到任务指令附近。
+3. 要求模型为每个关键结论引用来源小节。
+4. 减少无关背景资料。
+5. 将大任务拆成更小步骤。
 
-## Common causes
+## 常见原因
 
-- The prompt mixes instructions with source text.
-- The retrieved documents are too broad.
-- The task asks for a summary but the expected facts are not named.
-- The context contains conflicting statements.
+- 提示词把指令和资料混在一起。
+- 检索到的文档过宽泛。
+- 任务要求总结，但没有点名必须包含的事实。
+- 上下文中存在互相冲突的说法。
 
-## Follow-up
+## 后续处理
 
-If the issue repeats, create a minimal reproduction with one prompt, one context block, and one expected output. This makes it easier to review whether the problem is prompt design, retrieval quality, or model behavior.
+如果问题反复出现，创建一个最小复现：一个提示词、一个上下文块和一个期望输出。这样更容易判断问题来自提示词设计、检索质量还是模型行为。

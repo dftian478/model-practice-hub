@@ -1,9 +1,9 @@
 ---
-title: Reasoning Examples
-description: Copyable curl examples for GPT reasoning use cases.
+title: 推理示例
+description: 面向 GPT 推理场景的可复制 curl 示例。
 ---
 
-Set shared variables:
+设置共享变量：
 
 ```bash
 export OPENAI_BASE_URL="https://api.example.com/v1"
@@ -11,7 +11,7 @@ export OPENAI_API_KEY="replace-with-your-key"
 export MODEL_NAME="pa/gpt-5.5"
 ```
 
-## Support risk review
+## 支持风险审阅
 
 ```bash
 curl "$OPENAI_BASE_URL/responses" \
@@ -28,7 +28,7 @@ curl "$OPENAI_BASE_URL/responses" \
   }'
 ```
 
-## FAQ answer with stable fields
+## 带稳定字段的 FAQ 回答
 
 ```bash
 curl "$OPENAI_BASE_URL/responses" \
@@ -59,4 +59,4 @@ curl "$OPENAI_BASE_URL/responses" \
   }'
 ```
 
-Validate parameter names against the [Responses API reference](https://developers.openai.com/api/docs/api-reference/responses) before publishing.
+发布前请根据 [Responses API reference](https://developers.openai.com/api/docs/api-reference/responses) 校验参数名称。

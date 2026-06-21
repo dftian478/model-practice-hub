@@ -1,20 +1,20 @@
 ---
-title: Why do responses vary between runs?
-description: A short explanation of why model responses can vary and how to reduce unwanted variation.
+title: 为什么多次运行的回答会不一样？
+description: 解释模型回答变化的原因，以及如何减少不需要的变化。
 ---
 
-Model responses can vary because generation is probabilistic and context-sensitive. Small differences in prompt wording, retrieved context, temperature, tool results, or conversation history can change the answer.
+模型回答会变化，是因为生成过程具有概率性并且对上下文敏感。提示词措辞、检索上下文、temperature、工具结果或对话历史的细小差异，都可能改变答案。
 
-## How to reduce variation
+## 如何减少变化
 
-- Keep prompts structured and consistent.
-- Provide the same source context each time.
-- Lower randomness settings when the API supports them.
-- Ask for a fixed output schema.
-- Add review rules for facts, citations, and uncertainty.
+- 保持提示词结构一致。
+- 每次提供相同的来源上下文。
+- 在 API 支持时降低随机性参数。
+- 要求固定输出 schema。
+- 对事实、引用和不确定性添加审阅规则。
 
-## When variation is acceptable
+## 什么时候可以接受变化
 
-Variation is often acceptable for brainstorming, drafting, and exploratory analysis. It is less acceptable for compliance-sensitive answers, customer commitments, or deterministic workflow steps.
+头脑风暴、草稿写作和探索性分析通常可以接受一定变化。合规敏感回答、客户承诺或确定性工作流步骤则不适合明显变化。
 
-For critical workflows, combine model output with validation logic, human review, or deterministic post-processing.
+关键工作流应结合校验逻辑、人工审阅或确定性后处理。

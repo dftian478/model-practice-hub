@@ -1,30 +1,30 @@
 ---
-title: The response format is inconsistent
-description: How to improve consistency when model output shape changes across runs.
-category: Troubleshooting
+title: 回答格式不一致
+description: 当模型输出结构在多次运行中变化时，如何提升一致性。
+category: 排障
 reviewStatus: Draft
 lastReviewed: 2026-06-14
 ---
 
-If a response format changes across runs, make the expected output shape explicit and validate the result before downstream use.
+如果回答格式在多次运行中变化，应明确期望输出结构，并在下游使用前校验结果。
 
-## Checks
+## 检查项
 
-1. Add a concrete schema or bullet structure to the prompt.
-2. Include one short example if the format is unfamiliar.
-3. Remove conflicting instructions.
-4. Lower randomness settings if available.
-5. Add application-side validation before accepting the output.
+1. 在提示词中加入具体 schema 或条目结构。
+2. 如果格式不常见，加入一个短示例。
+3. 移除互相冲突的指令。
+4. 如 API 支持，降低随机性参数。
+5. 接收输出前加入应用侧校验。
 
-## Example instruction
+## 示例指令
 
 ```text
-Return exactly three sections:
-1. Summary
-2. Evidence
-3. Next checks
+只返回三个部分：
+1. 摘要
+2. 依据
+3. 下一步检查
 ```
 
-## When to escalate
+## 何时升级处理
 
-If format consistency is required for automation, do not rely on prompt wording alone. Add validation and retry logic in the application layer.
+如果自动化流程强依赖格式一致性，不要只依赖提示词。应在应用层增加校验和重试逻辑。

@@ -1,29 +1,29 @@
 ---
-title: Overview
-description: What Model Practice Hub is for and how to use it.
+title: 概览
+description: 模型实践中心的用途和使用方式。
 ---
 
-Model Practice Hub is a neutral knowledge base for applied model usage. It collects practical guidance, FAQs, and troubleshooting notes that help readers understand common implementation patterns without exposing internal company context.
+模型实践中心是一个中立的模型使用知识库，用来沉淀最佳实践、FAQ 和排障说明。它帮助读者理解常见的模型接入与使用模式，同时避免暴露组织、客户或私有环境信息。
 
-This site is intended for:
+适合阅读的人群：
 
-- Teams evaluating or integrating closed-source AI models.
-- Support and solution teams who need reusable answers for recurring questions.
-- Readers who want practical guidance alongside links to official vendor documentation.
+- 正在评估或接入闭源 AI 模型的团队。
+- 需要复用答疑内容的技术支持和解决方案团队。
+- 希望同时看到实践建议与官方文档链接的读者。
 
-## Content boundaries
+## 内容边界
 
-Each article should separate three kinds of information:
+每篇文章都应该区分三类信息：
 
-- **Official behavior:** facts grounded in vendor documentation.
-- **Observed practice:** implementation patterns seen in real usage.
-- **Recommendation:** practical guidance that readers can evaluate in their own environment.
+- **官方行为：** 来自官方文档的能力、参数或限制说明。
+- **观察实践：** 在实际使用中常见的实现模式。
+- **建议：** 读者可以在自己环境中验证的实践建议。
 
-This site should not include company names, customer names, internal project names, private screenshots, internal domains, or unpublished vendor claims.
+站点不应包含组织名称、客户名称、私有项目名、未脱敏截图、私有域名或未经官方公开确认的能力声明。
 
-## Common sections
+## 常见栏目
 
-- Best Practices: reusable patterns and implementation guidance.
-- FAQ: short answers to common questions.
-- Troubleshooting: symptom-led diagnosis and fixes.
-- Editorial Policy: rules for neutral and safe publication.
+- 最佳实践：可复用模式和实现建议。
+- FAQ：常见问题的短答。
+- 排障：按症状定位问题并给出检查步骤。
+- 发布规范：确保内容中立、安全、可公开。

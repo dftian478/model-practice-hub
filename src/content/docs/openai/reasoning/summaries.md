@@ -1,17 +1,17 @@
 ---
-title: Reasoning Summaries
-description: How to request useful reasoning summaries without exposing hidden reasoning.
+title: 推理摘要
+description: 如何请求有用的 reasoning summary，同时避免承诺暴露隐藏推理。
 ---
 
-Reasoning summaries can help users understand progress or the basis for an answer when the model supports them. Treat these summaries as generated explanations, not as raw hidden reasoning.
+当模型支持时，reasoning summary 可以帮助用户理解进展或答案依据。应把 summary 视为模型生成的解释，而不是原始隐藏推理。
 
-## When to request summaries
+## 什么时候请求 summary
 
-- Complex support investigations.
-- Tool-heavy workflows where the user needs progress visibility.
-- Review tasks where the final recommendation should include a compact rationale.
+- 复杂支持排查。
+- 用户需要看到进度的工具型工作流。
+- 最终建议需要包含简短理由的审阅任务。
 
-## Example
+## 示例
 
 ```json
 {
@@ -25,6 +25,6 @@ Reasoning summaries can help users understand progress or the basis for an answe
 }
 ```
 
-Do not promise that summaries reveal hidden chain-of-thought. Use them as a concise explanation surface.
+不要承诺 summary 会展示隐藏 chain-of-thought。把它作为简洁说明层使用。
 
-Official reference: [OpenAI reasoning models guide](https://developers.openai.com/api/docs/guides/reasoning).
+官方参考：[OpenAI reasoning models guide](https://developers.openai.com/api/docs/guides/reasoning)。
