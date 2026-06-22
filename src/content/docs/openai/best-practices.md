@@ -22,7 +22,7 @@ description: 编写可靠 OpenAI 兼容文档和示例的实践规则。
 ## 保持示例可移植
 
 - Use `OPENAI_BASE_URL`, `OPENAI_API_KEY`, and `MODEL_NAME`.
-- 兼容示例使用 `pa/` 模型前缀。
+- 示例默认使用 OpenAI 官方模型 ID。
 - 避免假设地区、控制台、账户计划或私有路由。
 - FAQ 先给短答，再给诊断和链接。
 

@@ -1,9 +1,9 @@
 ---
 title: GPT-5.5
-description: Dedicated notes and FAQ for the gpt-5.5 model mapped as pa/gpt-5.5.
+description: Dedicated notes and FAQ for the gpt-5.5 model.
 ---
 
-Use `pa/gpt-5.5` in compatibility examples. The official OpenAI model ID is `gpt-5.5`.
+Use the official OpenAI model ID in examples: `gpt-5.5`.
 
 OpenAI's latest model guide describes GPT-5.5 as suitable for complex production workflows such as coding, tool-heavy agents, grounded assistants, long-context retrieval, and product-spec-to-plan work. It also notes that GPT-5.5 supports the API features available with GPT-5.4, including prompt caching and hosted tools.
 
@@ -14,7 +14,7 @@ Official reference: [OpenAI latest model guide](https://developers.openai.com/ap
 | Setting | Default guidance |
 | --- | --- |
 | API | Prefer the Responses API for reasoning, tools, and multi-turn examples. |
-| Model | `pa/gpt-5.5` |
+| Model | `gpt-5.5` |
 | Reasoning effort | Start with `medium`; test `low` for latency-sensitive paths. |
 | Output budget | Set enough `max_output_tokens` for reasoning plus the final answer. |
 
@@ -34,4 +34,4 @@ Yes. Give the model the target audience, answer length, required caveats, and of
 
 ### What should be tested before publishing?
 
-Run one smoke request with `pa/gpt-5.5`, verify the example endpoint shape, and confirm the output answers the documented task without requiring private context.
+Run one smoke request with `gpt-5.5`, verify the example endpoint shape, and confirm the output answers the documented task without requiring private context.

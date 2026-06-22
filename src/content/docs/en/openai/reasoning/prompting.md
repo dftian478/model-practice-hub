@@ -13,7 +13,7 @@ Audience: API users who need a direct fix.
 Success criteria:
 - Identify the likely cause.
 - Provide three checks in order.
-- Avoid private or provider-specific details.
+- Avoid private endpoint, account, or customer details.
 Output: Short answer, checks, next step.
 ```
 

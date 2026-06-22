@@ -1,19 +1,19 @@
 ---
 title: FAQ
-description: Common questions for OpenAI-compatible docs, model mapping, and reasoning examples.
+description: Common questions for OpenAI-compatible docs, model selection, and reasoning examples.
 ---
 
 ## Which model name should examples use?
 
-Use `pa/<official-model-id>`. For example, OpenAI's `gpt-5.5` becomes `pa/gpt-5.5`.
+Use official OpenAI model IDs by default. For example, `gpt-5.5`. If a compatible endpoint requires a different name, readers should only replace `MODEL_NAME`.
 
 ## Should examples include a real API domain?
 
 No. Use `OPENAI_BASE_URL` and a placeholder such as `https://api.example.com/v1`. Readers replace it with their own compatible endpoint.
 
-## Can a reader call OpenAI directly with `pa/gpt-5.5`?
+## Can readers call OpenAI directly with these examples?
 
-No. The `pa/` prefix is for this compatibility layer. Direct OpenAI calls should use official OpenAI model IDs.
+Yes, if `OPENAI_BASE_URL` points to OpenAI's official `/v1` endpoint and the reader uses a valid OpenAI API key. For other compatible endpoints, readers should fill in their own domain and key.
 
 ## Why use the Responses API?
 
@@ -25,4 +25,4 @@ No. Treat summaries as model-provided explanations or progress notes, not as raw
 
 ## How should new model pages be added?
 
-Refresh the official OpenAI model source, add the official ID to the model list, map it to `pa/<official-id>`, then add a dedicated model FAQ page.
+Refresh the official OpenAI model source, add the official ID to the model list, then add a dedicated model FAQ page.

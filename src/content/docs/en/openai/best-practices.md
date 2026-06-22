@@ -22,7 +22,7 @@ Begin with the default or a low reasoning effort for latency-sensitive paths, th
 ## Keep examples portable
 
 - Use `OPENAI_BASE_URL`, `OPENAI_API_KEY`, and `MODEL_NAME`.
-- Use the `pa/` model prefix for compatibility examples.
+- Use official OpenAI model IDs by default.
 - Avoid hidden assumptions about region, dashboard, account plan, or private routing.
 - Publish FAQ entries with a short answer first, then diagnostics and links.
 

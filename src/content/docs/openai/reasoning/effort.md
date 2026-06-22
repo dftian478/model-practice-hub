@@ -18,15 +18,22 @@ description: 如何为 GPT-5.5 示例选择 reasoning effort。
 
 ## 示例
 
-```json
-{
-  "model": "pa/gpt-5.5",
-  "input": "Compare two rollout options and recommend one.",
-  "reasoning": {
-    "effort": "medium"
-  },
-  "max_output_tokens": 1200
-}
+```bash
+export OPENAI_BASE_URL="https://api.example.com/v1"
+export OPENAI_API_KEY="replace-with-your-key"
+export MODEL_NAME="gpt-5.5"
+
+curl "$OPENAI_BASE_URL/responses" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "'"$MODEL_NAME"'",
+    "input": "Compare two rollout options and recommend one.",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "max_output_tokens": 1200
+  }'
 ```
 
 官方参考：[latest model guide](https://developers.openai.com/api/docs/guides/latest-model) 和 [reasoning guide](https://developers.openai.com/api/docs/guides/reasoning)。

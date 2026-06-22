@@ -9,7 +9,7 @@ Use it for tasks that need comparison, planning, multi-step troubleshooting, or 
 
 ## What effort should I start with?
 
-For `pa/gpt-5.5`, start with `medium`. Try `low` for latency-sensitive tasks and increase only when evaluation shows better answers.
+For `gpt-5.5`, start with `medium`. Try `low` for latency-sensitive tasks and increase only when evaluation shows better answers.
 
 ## Why did the answer get cut off?
 

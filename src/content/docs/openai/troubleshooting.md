@@ -12,8 +12,8 @@ description: OpenAI 兼容请求和响应常见问题检查。
 确认端点和模型命名规则：
 
 - `OPENAI_BASE_URL` 应指向兼容的 `/v1` 根路径。
-- 兼容示例应使用 `pa/<official-model-id>`，例如 `pa/gpt-5.5`。
-- 直接调用 OpenAI 的示例应使用不带 `pa/` 的官方模型 ID。
+- 示例默认使用 OpenAI 官方模型 ID，例如 `gpt-5.5`。
+- 如果兼容端点要求不同模型名称，只替换 `MODEL_NAME`。
 
 ## 推理输出过短
 

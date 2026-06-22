@@ -9,17 +9,19 @@ Use three values in every example:
 | --- | --- | --- |
 | `OPENAI_BASE_URL` | OpenAI-compatible `/v1` endpoint. | `https://api.example.com/v1` |
 | `OPENAI_API_KEY` | User-owned API key. | `replace-with-your-key` |
-| `MODEL_NAME` | Model selected by the reader. | `pa/gpt-5.5` |
+| `MODEL_NAME` | Model selected by the reader. | `gpt-5.5` |
 
 ## Model naming
 
-Official OpenAI model IDs are mapped by adding `pa/` to the front.
+Examples use official OpenAI model IDs by default. When calling a compatible endpoint, replace `MODEL_NAME` only if your service explicitly requires a different model name.
 
-| Official ID | Published ID |
+| Purpose | Recommended value |
 | --- | --- |
-| `gpt-5.5` | `pa/gpt-5.5` |
+| Default complex tasks | `gpt-5.5` |
+| Lighter support or routing tasks | `gpt-5.4-mini` |
+| Simple classification, formatting, or short extraction | `gpt-5.4-nano` |
 
-Do not add provider names, routing suffixes, or experimental suffixes in public examples. If a new official OpenAI model is added, first refresh the official source, then publish the mapped ID as `pa/<official-id>`.
+Do not add service names, routing suffixes, or experimental suffixes in public examples. If a new official OpenAI model is added, first refresh the official source, then update this table.
 
 ## Content controls
 

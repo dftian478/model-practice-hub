@@ -31,7 +31,7 @@ The static `/admin/` page is already included in this project. The missing produ
 
 - Netlify Identity + Git Gateway.
 - A small self-hosted GitHub OAuth backend.
-- A hosted Decap-compatible OAuth provider.
+- A hosted Decap-compatible OAuth service.
 
 Best for:
 

@@ -1,19 +1,19 @@
 ---
 title: 常见问题
-description: OpenAI 兼容文档、模型映射和推理示例的常见问题。
+description: OpenAI 兼容文档、模型选择和推理示例的常见问题。
 ---
 
 ## 示例应该使用哪个模型名称？
 
-使用 `pa/<official-model-id>`。例如 OpenAI 的 `gpt-5.5` 映射为 `pa/gpt-5.5`。
+默认使用 OpenAI 官方模型 ID。例如 `gpt-5.5`。如果读者的兼容端点要求不同名称，应只替换 `MODEL_NAME`。
 
 ## 示例中应该写真实 API 域名吗？
 
 不应该。使用 `OPENAI_BASE_URL` 和 `https://api.example.com/v1` 这类占位符，读者用自己的兼容端点替换。
 
-## 读者能用 `pa/gpt-5.5` 直接调用 OpenAI 吗？
+## 读者能用这些示例直接调用 OpenAI 吗？
 
-不能。`pa/` 前缀用于本站兼容层示例。直接调用 OpenAI 时应使用 OpenAI 官方模型 ID。
+可以，前提是把 `OPENAI_BASE_URL` 设置为 OpenAI 官方 `/v1` 端点，并使用有效的 OpenAI API key。调用其他兼容端点时，读者应填自己的域名和 key。
 
 ## 为什么使用 Responses API？
 
@@ -25,4 +25,4 @@ description: OpenAI 兼容文档、模型映射和推理示例的常见问题。
 
 ## 如何添加新模型页面？
 
-先刷新 OpenAI 官方模型来源，将官方 ID 加入模型列表，映射为 `pa/<official-id>`，再添加专属模型 FAQ 页面。
+先刷新 OpenAI 官方模型来源，将官方 ID 加入模型列表，再添加专属模型 FAQ 页面。

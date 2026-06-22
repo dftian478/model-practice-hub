@@ -12,8 +12,8 @@ Check that `OPENAI_API_KEY` is set in the same shell session as the curl command
 Confirm the endpoint and model naming convention:
 
 - `OPENAI_BASE_URL` should point to the compatible `/v1` root.
-- Compatibility examples should use `pa/<official-model-id>`, such as `pa/gpt-5.5`.
-- Direct OpenAI examples should use official model IDs without `pa/`.
+- Examples should use official OpenAI model IDs by default, such as `gpt-5.5`.
+- If a compatible endpoint requires a different model name, replace only `MODEL_NAME`.
 
 ## Reasoning output is too short
 

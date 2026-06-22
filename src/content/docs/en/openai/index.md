@@ -3,15 +3,15 @@ title: OpenAI Practice Guide
 description: Neutral implementation notes for OpenAI-compatible model usage, with configurable endpoints and model names.
 ---
 
-This guide is a neutral field manual for teams that need clear, copyable OpenAI-compatible examples. It keeps provider-specific values out of the prose: readers set their own API key, base URL, and model name once, then reuse the examples.
+This guide is a neutral field manual for teams that need clear, copyable OpenAI-compatible examples. It keeps private service values out of the prose: readers set their own API key, base URL, and model name once, then reuse the examples.
 
-Use the official OpenAI documentation as the source of truth for API behavior. These notes summarize implementation patterns and map official model IDs to the published compatibility naming convention: add the `pa/` prefix to the official model ID.
+Use the official OpenAI documentation as the source of truth for API behavior. These notes summarize implementation patterns and use official OpenAI model IDs by default. If readers use a compatible endpoint, they should use the model IDs actually supported by their service.
 
 ## Sections
 
 - [Quickstart](./quickstart/) sets environment variables and makes the first Responses API call.
 - [Configuration](./configuration/) explains how to keep keys, domains, and model names replaceable.
-- [Models](./models/) lists currently applicable model names and their `pa/` mapping.
+- [Models](./models/) lists currently applicable model names and recommended use cases.
 - [Curl examples](./curl-examples/) provides copyable calls for common support cases.
 - [GPT reasoning](./reasoning/) covers effort, token budgeting, summaries, prompting, tools, and FAQ.
 

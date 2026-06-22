@@ -55,6 +55,12 @@ for (const file of files) {
 		if (/@(company|corp|internal)\./i.test(line)) {
 			findings.push(`${relative(root, file)}:${index + 1} contains a possible internal email/domain`);
 		}
+		if (/\bPA\b|pa\//.test(line)) {
+			findings.push(`${relative(root, file)}:${index + 1} contains PA-specific wording`);
+		}
+		if (/https?:\/\/(?!api\.example\.com\b|example\.com\b|astro\.build\b|developers\.openai\.com\b|openai\.com\b|dftian478\.github\.io\b)[^\s)"'`<>]+/i.test(line)) {
+			findings.push(`${relative(root, file)}:${index + 1} contains a non-placeholder or non-official URL`);
+		}
 	});
 }
 

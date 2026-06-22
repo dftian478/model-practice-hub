@@ -8,7 +8,7 @@ The examples assume an OpenAI-compatible endpoint. Set the base URL to the `/v1`
 ```bash
 export OPENAI_BASE_URL="https://api.example.com/v1"
 export OPENAI_API_KEY="replace-with-your-key"
-export MODEL_NAME="pa/gpt-5.5"
+export MODEL_NAME="gpt-5.5"
 ```
 
 Send a first request:
@@ -24,11 +24,11 @@ curl "$OPENAI_BASE_URL/responses" \
   }'
 ```
 
-If you call the official OpenAI endpoint directly, use the official model ID instead of the `pa/` mapped ID. For this guide's compatibility layer, keep the `pa/` prefix and do not use provider-specific suffixes.
+If you call the official OpenAI endpoint directly, set `OPENAI_BASE_URL` to the official `/v1` endpoint and use an official model ID. For compatible endpoints, replace only the base URL, key, and model name when required.
 
 ## Before publishing an example
 
 - Keep API keys in environment variables.
 - Keep base URLs configurable.
-- Use `pa/<official-model-id>` for model names in examples.
+- Use official OpenAI model IDs by default.
 - Link official OpenAI sources when describing model or API behavior.

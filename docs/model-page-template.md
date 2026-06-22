@@ -15,7 +15,7 @@ Describe the model's best-fit tasks in neutral language.
 ## Configuration
 
 ```bash
-export MODEL_NAME="pa/<official-model-id>"
+export MODEL_NAME="<official-model-id>"
 ```
 
 ## FAQ

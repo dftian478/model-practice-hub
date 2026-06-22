@@ -8,7 +8,7 @@ Set shared variables first:
 ```bash
 export OPENAI_BASE_URL="https://api.example.com/v1"
 export OPENAI_API_KEY="replace-with-your-key"
-export MODEL_NAME="pa/gpt-5.5"
+export MODEL_NAME="gpt-5.5"
 ```
 
 ## Basic answer

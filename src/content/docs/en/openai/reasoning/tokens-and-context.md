@@ -14,15 +14,22 @@ Reasoning work consumes output budget before the visible answer is completed. Ke
 
 ## Example budget
 
-```json
-{
-  "model": "pa/gpt-5.5",
-  "input": "Analyze this support incident and produce a concise resolution plan.",
-  "reasoning": {
-    "effort": "medium"
-  },
-  "max_output_tokens": 1600
-}
+```bash
+export OPENAI_BASE_URL="https://api.example.com/v1"
+export OPENAI_API_KEY="replace-with-your-key"
+export MODEL_NAME="gpt-5.5"
+
+curl "$OPENAI_BASE_URL/responses" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "'"$MODEL_NAME"'",
+    "input": "Analyze this support incident and produce a concise resolution plan.",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "max_output_tokens": 1600
+  }'
 ```
 
 Official reference: [OpenAI reasoning models guide](https://developers.openai.com/api/docs/guides/reasoning).
